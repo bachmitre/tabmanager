@@ -1,4 +1,5 @@
 let isDown = false;
+let isClosed = false;
 let drag = false;
 let div = null;
 let tabIdtoTab = {};
@@ -270,25 +271,29 @@ function image_error(e) {
 
 function mouseUp() {
     isDown = false;
-    if (div != null) {
-        if (!drag) {
+    if (div != null && div.id != null) {
+        if (!drag && !isClosed) {
             chrome.tabs.update(parseInt(div.id), {active: true});
             div = null;
         }
         else {
             div.removeEventListener('mousemove', mouseMove, true);
-            tabIdtoTab[parseInt(div.id)].position = [div.offsetLeft, div.offsetTop];
-            if (!window.isPopup) {
-                localforage.setItem(positionKey, Object.values(tabIdtoTab));
+            if (tabIdtoTab[parseInt(div.id)] != null) {
+                tabIdtoTab[parseInt(div.id)].position = [div.offsetLeft, div.offsetTop];
+                if (!window.isPopup) {
+                    localforage.setItem(positionKey, Object.values(tabIdtoTab));
+                }
+                div.style.zIndex = '0';
             }
-            div.style.zIndex = '0';
         }
     }
+    isClosed = false;
 }
 
 function close(event) {
     chrome.tabs.remove(tabIdtoTab[parseInt(event.target.parentElement.id)].id, function() {
         tabsElement.removeChild(event.target.parentElement);
+        isClosed = true;
     });
 }
 
