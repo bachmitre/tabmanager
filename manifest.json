@@ -11,7 +11,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["tabs"],
+  "permissions": ["activeTab", "tabs"],
   "action": {
     "default_popup": "popup.html"
   },
