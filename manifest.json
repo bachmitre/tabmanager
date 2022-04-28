@@ -1,6 +1,6 @@
 {
   "name": "Tab Manager",
-  "description": "Organize my tabs",
+  "description": "Organize your tabs on a desktop-like screen.",
   "icons": {
     "16": "icons/icon.png",
     "48": "icons/icon.png",
@@ -11,19 +11,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*/*"
-      ],
-      "js": [
-        "content.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true
-    }
-  ],
-  "permissions": ["activeTab", "scripting", "tabs"],
+  "permissions": ["tabs"],
   "action": {
     "default_popup": "popup.html"
   },

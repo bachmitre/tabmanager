@@ -1,5 +1,6 @@
 self.importScripts('libs/localforage.min.js');
 
+// push the current active tab onto the lasttabs array
 chrome.tabs.onActivated.addListener(function(activeInfo) {
     localforage.getItem('lasttabs').then(function (lastTabs) {
         if (lastTabs && lastTabs.length > 0) {
