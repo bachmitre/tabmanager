@@ -8,7 +8,7 @@ const lasttabsKey = 'lasttabs';
 
 spacingX = 100;
 spacingY = 125;
-offsetY = 5;
+offsetY = 70;
 
 let tabsElement = document.getElementById("tabs");
 let dockContainer = document.getElementById("dock-container");
@@ -18,8 +18,6 @@ window.addEventListener('mouseup', mouseUp, true);
 function showMenu() {
     document.getElementById("buymeacoffee").classList.toggle("show");
 }
-
-document.getElementById("menu").addEventListener('click', showMenu);
 
 htmlEscape = (str) => {
     const entityMap = {
@@ -345,6 +343,7 @@ function checkTime(i) {
 
 if (!window.isPopup) {
     startTime();
+    document.getElementById("menu").addEventListener('click', showMenu);
 }
 
 chrome.tabs.onActivated.addListener(() => {
