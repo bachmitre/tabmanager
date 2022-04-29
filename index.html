@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="popup.css">
-    <title>Tab Manager</title>
-  </head>
-  <body>
-    <div class="menu-bar">
-      <div class="left">
-        <img src="https://icons.iconarchive.com/icons/tatice/browsers/32/Google-Chrome-icon.png" class="apple-logo" alt="">
-        <span class="menus active">Tab Manager</span>
-        <!--span class="menus">Help</span-->
-      </div>
-      <div class="right">
-        <div id="icon_description" class="title-display" ></div>
-        <div class="menu-time" id="clock">
-        </div>
-      </div>
+<head>
+  <link rel="stylesheet" href="popup.css">
+  <title>Tab Manager</title>
+</head>
+<body>
+<div id="buymeacoffee" class="menu-content">
+  <center>
+    If you like this project:<br><br>
+    <a href="https://www.buymeacoffee.com/bachmitre" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+  </center>
+</div>
+<div class="menu-bar">
+  <div class="left">
+    <img src="https://icons.iconarchive.com/icons/tatice/browsers/32/Google-Chrome-icon.png" class="logo" alt="">
+    <span id='menu' class="menus active">Tab Manager</span>
+  </div>
+  <div style="text-align: center; padding: 10px;">
+    <form method="get" action="https://www.google.com/search" target="_self">
+      <input type="text" name="q" placeholder="Search..." style="position:fixed; height: 40px; width: 400px; border-radius: 10px; font-size: 1.5em; padding-left: 10px;"/>
+    </form>
+  </div>
+  <div class="right">
+    <div id="icon_description" class="title-display" ></div>
+    <div class="menu-time" id="clock">
     </div>
-    <div style="text-align: center; padding: 10px;">
-      <form style="position:relative" method="get" action="https://www.google.com/" target="_self">
-        <input type="text" name="q" placeholder="Search..." style="height: 40px; width: 400px; border-radius: 10px; font-size: 1.5em; padding-left: 10px;"/>
-      </form>
-    </div>
-    <div id="tabs"></div>
-    <div class="dock">
-      <div class="dock-container" id="dock-container">
-      </div>
-    </div>
-    <script src="libs/localforage.min.js"></script>
-    <script src="tabmanager.js"></script>
-  </body>
+  </div>
+</div>
+<div id="tabs"></div>
+<div class="dock">
+  <div class="dock-container" id="dock-container">
+  </div>
+</div>
+<script src="libs/localforage.min.js"></script>
+<script src="tabmanager.js"></script>
+</body>
 </html>

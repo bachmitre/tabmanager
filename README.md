@@ -59,7 +59,8 @@ From here, use the number keys to quickly switch to the first, second, third, et
 MIT
 
 ---
-<center> If you like this extension, please consider to
+<center> If you like this extension, please consider to 
+
 
 <a href="https://www.buymeacoffee.com/bachmitre" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 

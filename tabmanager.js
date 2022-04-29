@@ -15,6 +15,12 @@ let dockContainer = document.getElementById("dock-container");
 
 window.addEventListener('mouseup', mouseUp, true);
 
+function showMenu() {
+    document.getElementById("buymeacoffee").classList.toggle("show");
+}
+
+document.getElementById("menu").addEventListener('click', showMenu);
+
 htmlEscape = (str) => {
     const entityMap = {
         '&': '&amp;',
