@@ -1,1 +1,1 @@
-zip tabmanager.zip * -x screenshots -x pack.sh
+zip -r tabmanager.zip * -x screenshots -x pack.sh -x screenshots
