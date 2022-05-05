@@ -26,7 +26,7 @@ Click on an icon to quickly switch to that tab, or close the tab by clicking on 
 ![screenshot](screenshots/close.png)
 
 
-- 
+### Features
 - Drag the tab icons to reorder them.
 - Switch to the tab by clicking on the icon.
 - Hovering over the icon will display a little button to close the tab.
@@ -37,12 +37,20 @@ The same toolbar is also available when displaying the extensions popup page:
 
 ![popup](screenshots/popup.png)
 
+### Installation
+Soon to be available on in the Chrome Web Store. 
+
+Meanwhile:
+
+Clone this repository to your local machine, then on the Chrome extensions page click **Load Unpacked** 
+and select the cloned   **tabmanager** folder. 
+
 ### How I use it
 The desktop page is set to be the default page when opening a new tab, 
 so opening a new tab will display the new tabs desktop page.
 Pin this tab, which will move the tab to be your "first" tab:
 
-![icon](icons/icon.png)
+![icon](icons/icon48.png)
 
 Now you can quickly switch to the tab desktop by clicking "command + 1"
 From here, use the number keys to quickly switch to the first, second, third, etc. most recent tab.
@@ -56,7 +64,7 @@ From here, use the number keys to quickly switch to the first, second, third, et
 - https://github.com/kylepaulsen/SuperBookmarkDesktop
 
 ### License
-MIT
+[MIT](https://github.com/bachmitre/tabmanager/blob/main/LICENSE)
 
 ---
 <center> If you like this extension, please consider to 
