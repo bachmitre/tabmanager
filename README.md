@@ -1,7 +1,7 @@
 Tab Manager
 ---
 
-Which tab is wich ?
+Which tab is which ?
 
 ![tabbar](screenshots/tabbar.png)
 
@@ -38,9 +38,12 @@ The same toolbar is also available when displaying the extensions popup page:
 ![popup](screenshots/popup.png)
 
 ### Installation
-Soon to be available on in the Chrome Web Store. 
+From Chrome Web Store:
 
-Meanwhile:
+https://chrome.google.com/webstore/detail/tab-manager/nolkmpikckfpnlgjekoifbhjajfdghei
+
+From GitHub:
+
 
 Clone this repository to your local machine, then on the Chrome extensions page click **Load Unpacked** 
 and select the cloned   **tabmanager** folder. 
